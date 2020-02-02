@@ -15,8 +15,10 @@ export default function App() {
   console.log(lightOn);
 
   return (
-    <div onClick={() => setLightOn(!lightOn)} className="App">
+    <div className="App">
       <img src={lightOn ? YellowLight : WhiteLight} alt="A lighbulb" />
+      <h1>Click below to turn the Lightbulb is ON/OFF</h1>
+      <button onClick={() => setLightOn(!lightOn)}>ON/OFF</button>
     </div>
   );
 }
