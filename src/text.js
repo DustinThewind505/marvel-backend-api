@@ -104,9 +104,6 @@ function Bulb() {
 //   }
 // }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<Geniesus />, rootElement);
-
 // function Next() {
 //   const [anything, setAnything] = useState(false);
 
