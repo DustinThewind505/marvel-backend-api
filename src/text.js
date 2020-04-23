@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
 
 function Geniesus() {
   const [i, setI] = useState(false);
@@ -61,55 +60,56 @@ function Bulb() {
 
   return <div>The lighbulb is {isBulbOn ? "ON" : "OFF"}</div>;
 
-  // if (isBulbOn) {
-  //   return (
-  //     <div>
-  //       The lightbulb is ON
-  //       <br />
-  //       {/* <Animorph /> */}
-  //     </div>
-  //   );
-  // } else {
-  //   return (
-  //     <div>
-  //       The lightbulb is OFF
-  //       <br />
-  //       {/* <Animorph /> */}
-  //     </div>
-  //   );
-  // }
+  if (isBulbOn) {
+    return (
+      <div>
+        The lightbulb is ON
+        <br />
+        <Animorph />
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        The lightbulb is OFF
+        <br />
+        <Animorph />
+      </div>
+    );
+  }
 }
 
-// function Animorph() {
-//   const [animorph, setAnimorph] = useState(false);
+function Animorph() {
+  const [animorph, setAnimorph] = useState(false);
 
-//   setTimeout(() => {
-//     setAnimorph(!animorph);
-//   }, 1000);
+  setTimeout(() => {
+    setAnimorph(!animorph);
+  }, 1000);
 
-//   if (animorph) {
-//     return (
-//       <div>
-//         And the animorph tranforms into a CAMEL<br />
-//         <Animorph />
-//       </div>
-//     );
-//   } else {
-//     return (
-//       <div>
-//         And the animorph tranforms into a PEACOCK<br />
-//         <Animorph />
-//       </div>
-//     );
-//   }
-// }
+  if (animorph) {
+    return (
+      <div>
+        And the animorph tranforms into a CAMEL<br />
+        <Next />
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        And the animorph tranforms into a PEACOCK<br />
+        <Next />
+      </div>
+    );
+  }
+}
 
-// function Next() {
-//   const [anything, setAnything] = useState(false);
+function Next() {
+  const [anything, setAnything] = useState(false);
 
-//   if (anything) {
-//     return <div>I can be THIS</div>;
-//   } else {
-//     return <div>I can be THAT</div>;
-//   }
-// }
+  if (anything) {
+    return <div>I can be THIS</div>;
+  } else {
+    return <div>I can be THAT</div>;
+  }
+}
+export default Geniesus;
