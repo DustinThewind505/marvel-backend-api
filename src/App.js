@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+
+import Jedi from './Jedi';
+import Text from './text';
 import "./styles.css";
 
 export default function App() {
@@ -16,6 +19,8 @@ export default function App() {
 
   return (
     <div className="App">
+      <Text />
+      <Jedi />
       <img src={lightOn ? YellowLight : WhiteLight} alt="A lighbulb" />
       <h1>Click below to turn the Lightbulb is ON/OFF</h1>
       <button onClick={() => setLightOn(!lightOn)}>ON/OFF</button>
