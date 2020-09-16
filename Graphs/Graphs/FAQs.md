@@ -6,8 +6,6 @@
 * [Why is it important to learn Graphs?](#q101)
 * [How many types of graphs are there?](#q102)
 * [What is the time complexity (big-O) to add/remove/get a vertex/edge for a graph?](#q103)
-* [All this stuff]
-
 ## Questions
 
 <a name="q100"></a>
