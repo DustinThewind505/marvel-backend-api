@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/DustinThewind505/marvel-backend-api#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "knex": "^0.95.6"
   },
   "devDependencies": {
